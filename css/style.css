@@ -1,0 +1,458 @@
+@font-face {
+    font-family: SakkalMajalla;
+    src: url(font/majalla.ttf);
+}
+
+
+
+
+
+
+
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333;*/
+
+}
+
+li {
+    float:left;
+
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    /*background-color: #111;*/
+    color: red;
+}
+
+
+
+
+body{
+
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+
+#menu-bar{
+	margin-left: 18%;
+	font-family:SakkalMajalla;
+	font-size: 18px;
+	 text-transform: uppercase;
+	 font-weight:500;
+}
+#menu-bar a{
+
+	margin-top: 3em;
+
+}
+#menu-bar a:first-child{
+/*margin-left: 0.5em;*/
+
+}
+#menu-bar img{
+	margin-right: 3em;
+	margin-top: 0.5em;
+}
+
+
+/*LA CONFIGURACION GRAFICA DEL SLIDER.*/
+
+#slider{
+	background: url("../img/slidebg.png");
+	background-repeat: no-repeat;
+	height: 26em;
+
+
+}
+
+#sliderText 	{
+	max-width: 330px;
+	position: absolute;
+	    float: right;
+
+    margin-left: 47%;
+    color: white;
+    font-family:SakkalMajalla;
+     text-transform: uppercase;
+	text-shadow: 2px 3px 4px #666;
+	margin-top: 2em;
+	letter-spacing: 1px;
+}
+#sliderText h1	{
+
+	font-size: 72px;
+	font-weight:800;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	margin-bottom: -0.3em;
+
+}
+
+#sliderText  span.blackHighlighter	{
+
+	font-weight:600;
+	background-color: black;
+	font-size: 18px;
+	position: relative;
+	top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+
+
+	border-bottom-right-radius: 45px;
+	border-top-left-radius: 45px;
+
+
+}
+
+#sliderText h2	{
+margin-top: 0;
+font-size: 18px;
+
+}
+
+
+#sliderText ul li	{
+clear: both;
+
+	display: inline-block;
+
+
+
+
+}
+
+#displays{
+
+margin-left: 12.5%;
+margin-top: 5%;
+    position: absolute;
+}
+
+
+/*BOTON VER PROYECTO DEL SLIDER.*/
+
+#btnVerProyecto{
+
+
+
+  word-wrap: break-word;
+
+  max-width: 100%;
+  text-transform: uppercase;
+font-family:SakkalMajalla;
+font-weight: 500;
+}
+
+#btnVerProyecto {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  color: red;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#btnVerProyecto span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#btnVerProyecto span:after {
+  content: url("../img/dot.png");
+  position: absolute;
+  opacity: 0;
+  top: 3px;
+  left: -20px;
+  transition: 0.5s;
+}
+
+#btnVerProyecto:hover span {
+  padding-left: 25px;
+}
+
+#btnVerProyecto:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+/*CONTENIDO*/
+
+#content{
+margin-top: 10em;
+
+margin-left: 15%;
+margin-right:15%;
+display: inline-block;
+margin-bottom: 3em;
+}
+
+
+#content h1{
+
+	font-family:SakkalMajalla;
+	font-size: 48px;
+	 text-transform: uppercase;
+	 font-weight:600;
+	 margin-bottom: 0;
+
+}
+
+
+#content p{
+
+	font-family:Arial;
+	font-size: 16px;
+	line-height: 1em;
+	margin-top: 0;
+
+
+}
+#content a{
+text-decoration: none;
+color: red;
+font-weight: 600;
+margin-bottom: 2px;
+	}
+
+	#link img{
+		position: relative;
+		top: 3px;
+
+
+
+
+	}
+	.categoria_imagen{
+
+		position: relative;
+		float: left;
+
+		padding-top: 3em;
+		padding-left: 2em;
+
+	}
+	.categoria_texto{
+		text-align: justify;
+		width: 77%;
+		position: relative;
+		float: right;
+		margin-right: 3em;
+		margin-bottom: 2em;
+	}
+
+
+
+
+
+/*FLOW DEL "COMO TRABAJAMOS" + OVERLAY LAYERS*/
+#flow{
+	width: 100%;
+  height: 100%;
+position: relative;
+display: inline-block;
+
+}
+
+#flow li {
+
+	position: relative;
+}
+
+#flow li .layer1{
+	content: url(../img/flowbg.png);
+
+
+  top: 0;
+  left: 0;
+    opacity: 0.05;
+
+}
+#flow li .layer2{
+
+content: url(../img/overlay.png);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+
+}
+.flow_content{
+position: absolute;
+    top: 1em;
+    left: 0;
+    text-align: center;
+   margin-right: 5%;
+    margin-left: 5%;
+
+
+}
+
+.flow_content h4{
+	font-size: 14px;
+
+	margin-top:0;
+	margin-bottom: 1em;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+	.arrow{
+		content: url(../img/arrow.png);
+	    position: absolute;
+	    top: 4em;
+	    right: -1em;
+	    z-index: 1;
+
+
+	}
+
+
+#flow p{
+
+
+
+
+	font-size: 11px;
+
+
+}
+
+/*CASOS DE EXITO*/
+
+
+
+
+
+.comillasinit{
+
+			content: url(../img/comillasInit.png);
+
+		position:relative;
+		float: left;
+
+
+
+		padding-right: 1em;
+
+	}
+.comillasfin{
+
+			content: url(../img/comillasfin.png);
+
+		position: relative;
+		float: right;
+		padding-left: 2em;
+
+
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+#footer{
+width: 100%;
+background: black;
+border:2px;
+border-color: red;
+display: inline-block;
+margin-top: 0;
+
+height: 100%;
+
+}
+
+
+
+.dir{
+color: white;
+float: left;
+display: inline-block;
+margin: 1em;
+padding: 1em;
+}
+.dir p{
+	max-width: 180px;
+	font-size: 12px;
+	margin-top: 0.5em;
+	}
+
+		.dirContainer{margin-left: 14em;}
+
+.dir b {
+
+		font-size: 16px;
+
+}
+
+.dir h2 {
+
+		padding-top: 0;
+		padding-bottom:0;
+		margin-top: 0;
+		margin-bottom: 0;
+
+
+}
+
+	#social{
+	display: inline-block;
+
+	margin-right: 15em;
+	float: right;
+	margin-top: 3em;
+
+
+	}
+
+	#social ul{
+
+	margin-left:  16em;
+
+
+
+	}
+
+		#social p{
+			font-size: 12px;
+			float: right;
+
+
+		}
+
+
+
